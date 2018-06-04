@@ -1,13 +1,6 @@
-Vue.component('dog', {
-    template: '#dog-template',
-    props: ['name', 'score'],
-    methods: {
-        voteDog: function(){
-            this.score++;
-        }
+var app = new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello Vue!'
     }
-})
-
-var vueApp = new Vue({
-    el: '#vueApp',
 })

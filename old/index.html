@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style media="screen">
+        .dogElem {
+            border: 1px solid black;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            width: 130px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="vueApp">
+    <dog name="Maja" score="0"></dog>
+    <dog name="Milus" score="0"></dog>
+</div>
+<template id="dog-template">
+    <div class="dogElem">
+        <h3>{{name}} the dog</h3>
+        <p>Score: <b>{{score}}</b></p>
+        <button type="button" @click="voteDog">VOTE</button>
+    </div>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
